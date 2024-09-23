@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../../imagen/logo.png">
+    <!--estilos css-->
+    <link rel="stylesheet" href="../../css/estilo_detalle.css">
+    <link rel="stylesheet" href="../../css/estilo_index.css">
+    <!--FRAMEWORK BOOTSTRAP-->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!--Libreria FONT AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!--API de google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>Vulkan EcoFlama</title>
+</head>
+<body>
+    <!--PARTE navbar-->
+    <!--PARTE navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light-blue custom-navbar fixed-top">
+        <!--LOGOTIPO-->
+        <a class="navbar-brand" href="../index.html"><img src="../../imagen/logo.png" alt="Logo"></a>
+        <!--BOTON PARA QUE CUANDO SE HAGA PEQUEÑA LA PANTALLA SEA RESPONSIVO -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- PARTE DEL MENU -->
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"> 
+                    <a class="nav-link" href="../../index.html"><i class="fas fa-home"></i> Inicio</a> 
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../productos.html"><i class="fas fa-bag-shopping"></i> Ver productos</a>
+                </li>
+                <li class="nav-item"> 
+                    <a class="nav-link" href="../../contacto.html"><i class="fas fa-user"></i> Contacto</a> 
+                </li>
+                <li class="nav-item"> 
+                    <a class="nav-link" href="../../vulkan.html"><i class="fas fa-industry"></i> VULKAN</a> 
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Imagen y Descripcion del producto -->
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Imagen del producto -->
+            <div class="col-md-6">
+                <div class="product-image">
+                    <img src="../producto_imagen/producto5.png" alt="Producto Vulkan" id="productImage">
+                    <div class="zoom-lens" id="zoomLens"></div>
+                </div>
+            </div>
+               <!-- Descripcion del producto -->
+   <div class="col-md-6">
+    <div class="product-description">
+        <h2>EcoFlama</h2>
+        <p>
+            Este modelo de estufa VULKAN EcoFlama es ideal para cocinas que requieren espacio. Con un diseño robusto, permite preparar múltiples platillos al mismo tiempo. Además, su construcción en materiales de alta calidad asegura durabilidad y rendimiento óptimo.
+        <p><strong>Especificaciones:</strong></p>
+        <p> <strong>Cinco parrillas de alta potencia: </strong>Proporcionan un calor uniforme, ideales para cocinar en varias ollas y sartenes de distintos tamaños.</p>
+        <p><strong>Encendido eléctrico: </strong>Equipado con un sistema de encendido automático, facilita el uso rápido y seguro.</p>
+        <p class="precio-custom">Precio: <strong>$10,000</strong> </p>
+
+        <button class="button" onclick="window.location.href='pago/pago.html'">
+            <svg viewBox="0 0 16 16" class="bi bi-cart-check"  height="24" width="24" xmlns="http://www.w3.org/2000/svg" fill="#fff">
+             <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"></path>
+             <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"></path>
+           </svg>
+             <p1 class="text" >Agregar al carrito</p1>
+           </button>
+    </div>
+</div>
+        </div>
+    </div>    
+    <!-- CONTENIDO CON IMAGEN Y TEXTO -->
+    <div class="contenedor">
+        <img src="../../imagen/fondo3.png" alt="fondo">
+        <div class="texto-adentro">
+            <h1>Estufas VULKAN</h1>
+            <p>Nuestros clientes valoran tener un producto de primer nivel y se sienten satisfechos al saber que tomaron una decisión de compra acertada y bien considerada.</p>
+        </div>
+    </div>
+
+        <!-- Parte acerca de-->
+        <footer class="bg-light text-center text-lg-start">
+            <div class="container p-4">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Sobre Nosotros</h5>
+                        <p class="text-justify">
+                            VULKAN es una empresa mexicana fundada en el Estado de México, Huixquilucan de Degollado. Desde 1972 el principal intéres de su fundador es fusionar el diseño y la eficiencia de las estufas mexicanas con las necesidades de cada estado de la república en el que tiene presencia.
+                        </p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <!-- CAMBIE EL LOGO EN VEZ DE EL INICIO PARA MAS PRESENTABILIDAD-->
+                        <img src="../../imagen/logo_fondo.png" alt="logo" class="logo-image">
+                     <!--   <h5 class="text-uppercase">Enlaces</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li><a href="index.html" class="text-dark">Inicio</a></li>
+                            <li><a href="productos/productos.html" class="text-dark">Ver productos</a></li>
+                            <li><a href="#!" class="text-dark">Contacto</a></li>
+                        </ul>-->
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Síguenos</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li><a href="#!" class="text-dark"><i class="fab fa-facebook"></i> Facebook</a></li>
+                            <li><a href="#!" class="text-dark"><i class="fab fa-twitter"></i> Twitter</a></li>
+                            <li><a href="#!" class="text-dark"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center p-3 bg-dark text-light">
+                © 2024 Estufas VULKAN. Todos los derechos reservados.
+            </div>
+        </footer>
+
+    <script src="../../script/anadir_carrito.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="../../../css/estilo_pago.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <form id="checkout-form" class="border p-4 rounded shadow-sm bg-light">
+            <!-- Formulario de Pago -->
+            <div class="form-group">
+                <label for="name"><i class="fas fa-user"></i> Nombre en la Tarjeta:</label>
+                <input type="text" class="form-control" id="name" placeholder="Nombre Completo" required>
+            </div>
+            <div class="form-group">
+                <label for="card-number"><i class="fas fa-credit-card"></i> Número de Tarjeta:</label>
+                <input type="text" class="form-control" id="card-number" placeholder="1234 5678 9012 3456" required>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="expiry-date"><i class="fas fa-calendar-alt"></i> Fecha de Expiración:</label>
+                    <input type="text" class="form-control" id="expiry-date" placeholder="MM/YY" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="cvv"><i class="fas fa-lock"></i> CVV:</label>
+                    <input type="text" class="form-control" id="cvv" placeholder="123" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="payment-method"><i class="fas fa-money-bill-wave"></i> Método de Pago:</label>
+                <div class="payment-methods">
+                    <div class="payment-option">
+                        <input type="radio" id="paypal" name="payment-method" value="paypal">
+                        <label for="paypal">
+                            <i class="fab fa-paypal"></i> PayPal
+                        </label>
+                    </div>
+                    <div class="payment-option">
+                        <input type="radio" id="mastercard" name="payment-method" value="mastercard">
+                        <label for="mastercard">
+                            <i class="fab fa-cc-mastercard"></i> Mastercard
+                        </label>
+                    </div>
+                    <div class="payment-option">
+                        <input type="radio" id="debit" name="payment-method" value="debit">
+                        <label for="debit">
+                            <i class="fas fa-credit-card"></i> Débito
+                        </label>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="button">
+                <svg viewBox="0 0 16 16" class="bi bi-cart-check" height="24" width="24" xmlns="http://www.w3.org/2000/svg" fill="#fff">
+                 <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"></path>
+                 <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"></path>
+               </svg>
+                 <p class="text">Procesar compra</p>
+               </button>
+
+        </form>
+        
+        <!-- Mensaje de Confirmación -->
+        <div id="confirmation-message" class="card d-none">
+            <button class="dismiss" type="button">×</button>
+            <div class="header">
+                <div class="div_image_v">
+                    <div class="image">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path d="M20 7L9.00004 18L3.99994 13" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+                <div class="content">
+                    <span class="title">Orden validada.</span>
+                    <p class="message">Gracias por tu compra. Su paquete será entregado dentro de los 2 días posteriores a su compra.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../../script/pago.js"></script>
+</body>
+</html>

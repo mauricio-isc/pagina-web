@@ -1,0 +1,25 @@
+.intro-text h1{
+
+    font-family: 'Anton', sans-serif;
+    color: #070707;
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #fcfcfc !important;
+    position: relative;
+    top: 56px; 
+}
+
+.intro-text p{
+   
+    font-family: 'Anton', sans-serif;
+    color: #070707;
+    text-align: justify;
+    padding: 30px 20px;
+    background-color: #fcfcfc !important;
+    position: relative;
+    top: 52px; 
+    font-size: 20px;
+    top: 56px;
+    margin: 0 auto; 
+    max-width: 900px; 
+}

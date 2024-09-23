@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ARCHIVO .CSS-->
+    <link rel="stylesheet" href="css/estilo_index.css">
+    <link rel="stylesheet" href="css/estilo_acerca.css">
+    <!-- LIBRERIA font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!--FRAMEWORK BOOTSTRAP-->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!--FUENTES DE GOOGLE FONTS-->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Great+Vibes&display=swap" rel="stylesheet">
+    <!-- ICONO PARA QUE AAPAREZCA EN PANTALLA-->
+    <link rel="icon" type="image/png" href="imagen/logo.png">
+    <title>Vulkan México</title>
+</head>
+<body>
+<header>
+    <!--PARTE navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light-blue custom-navbar fixed-top">
+        <!--LOGOTIPO-->
+        <a class="navbar-brand" href="index.html"><img src="imagen/logo.png" alt="Logo"></a>
+        <!--BOTON PARA QUE CUANDO SE HAGA PEQUEÑA LA PANTALLA SEA RESPONSIVO -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- PARTE DEL MENU -->
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"> 
+                    <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Inicio</a> 
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="productos/productos.html"><i class="fas fa-bag-shopping"></i> Ver productos</a>
+                </li>
+                <li class="nav-item"> 
+                    <a class="nav-link" href="contacto.html"><i class="fas fa-user"></i> Contacto</a> 
+                </li>
+                <li class="nav-item"> 
+                    <a class="nav-link" href="vulkan.html"><i class="fas fa-industry"></i> VULKAN</a> 
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="intro-text">
+        <h1>ACERCA DE VULKAN </h1>
+        <p>VULKAN es una empresa mexicana fundada en el Estado de México, Huixquilucan de Degollado. 
+        Desde 1972 el principal intéres de su fundador es fusionar el diseño y la eficiencia de las estufas mexicanas con las necesidades de cada estado de la república en el que tiene presencia.</p>
+        <p>Producir estufas con altos estándares de calidad, que sean durables, seguros, prácticos, elegantes son valores que nos han permitido crecer como una marca mexicana de gran prestigio.
+            Nuestros clientes se enorgullecen de tener un producto de eficiencia y están satisfechos al saber que realizaron una compra inteligente.
+        </p>
+    </div>
+        <!-- CONTENIDO CON IMAGEN Y TEXTO -->
+        <div class="contenedor">
+            <img src="imagen/fondo3.png" alt="fondo">
+            <div class="texto-adentro">
+                <h2>Estufas Vulkan</h2>
+                <p>Nuestros clientes valoran tener un producto de primer nivel y se sienten satisfechos al saber que tomaron una decisión de compra acertada y bien considerada.</p>
+            </div>
+        </div>
+
+        <!-- Parte acerca de-->
+        <footer class="bg-light text-center text-lg-start">
+            <div class="container p-4">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Sobre Nosotros</h5>
+                        <p class="text-justify">
+                            VULKAN es una empresa mexicana fundada en el Estado de México, Huixquilucan de Degollado. Desde 1972 el principal intéres de su fundador es fusionar el diseño y la eficiencia de las estufas mexicanas con las necesidades de cada estado de la república en el que tiene presencia.
+                        </p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <!-- CAMBIE EL LOGO EN VEZ DE EL INICIO PARA MAS PRESENTABILIDAD-->
+                        <img src="imagen/logo_fondo.png" alt="logo" class="logo-image">
+                     <!--   <h5 class="text-uppercase">Enlaces</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li><a href="index.html" class="text-dark">Inicio</a></li>
+                            <li><a href="productos/productos.html" class="text-dark">Ver productos</a></li>
+                            <li><a href="#!" class="text-dark">Contacto</a></li>
+                        </ul>-->
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Síguenos</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li><a href="#!" class="text-dark"><i class="fab fa-facebook"></i> Facebook</a></li>
+                            <li><a href="#!" class="text-dark"><i class="fab fa-twitter"></i> Twitter</a></li>
+                            <li><a href="#!" class="text-dark"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center p-3 bg-dark text-light">
+                © 2024 Estufas VULKAN. Todos los derechos reservados.
+            </div>
+        </footer>
+    </header> 
+    <script src="script/h1.js"></script>
+    <script src="script/script_index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</header>
+</body>
+</html>

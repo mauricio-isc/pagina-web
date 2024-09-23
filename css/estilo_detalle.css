@@ -1,0 +1,140 @@
+
+.product-image {
+
+  margin-top: 50px;
+  position: relative;
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  left: 40px;
+}
+
+
+.product-image img {
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: zoom-in;
+}
+
+
+.zoom-lens {
+
+  position: absolute;
+  border: 2px solid #000;
+  width: 100px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-size: 800px 800px; 
+  visibility: hidden;
+  pointer-events: none; 
+}
+
+
+
+.product-description {
+
+  padding: 20px;
+}
+
+
+
+h2{
+
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 3.5rem !important;
+  text-rendering: optimizeLegibility;
+  vertical-align: baseline;
+  -webkit-font-smoothing: anatialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: rgb(12, 12, 12);
+  letter-spacing: 10px;
+  top: 20px;
+  
+}
+
+ul {
+
+  list-style-type: disc; 
+  margin: 0;
+  padding: 0;
+  padding-left: 20px; 
+}
+
+ul li {
+
+  margin-bottom: 10px;
+}
+
+.product-description {
+
+  margin-top: 20px;
+}
+
+.product-description ul {
+
+  padding-left: 20px; 
+}
+
+.product-description li {
+
+  margin-bottom: 10px;
+}
+
+
+
+.button {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px;
+  gap: 15px;
+  background-color: #181717;
+  outline: 3px #181717 solid;
+  outline-offset: -3px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: 400ms;
+  margin:auto;
+  margin-top: -70px;
+  margin-left: 320px ;
+}
+
+.button .text {
+
+  color: white;
+  font-weight: 700;
+  font-size: 1.1em;
+  transition: 400ms;
+}
+
+.button svg path {
+
+  transition: 400ms;
+}
+
+.button:hover {
+
+  background-color: transparent;
+}
+
+.button:hover .text {
+
+  color: #181717;
+}
+
+.button:hover svg path {
+
+  fill: #181717;
+}
+
+
+.precio-custom{
+  
+  font-size: 36px;
+
+}

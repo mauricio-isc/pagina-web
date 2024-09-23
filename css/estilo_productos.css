@@ -1,0 +1,121 @@
+
+
+.product-link {
+
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.product-link:visited,
+.product-link:focus,
+.product-link:hover,
+.product-link:active {
+
+    color: rgb(0, 0, 0); 
+}
+
+.product-card {
+
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.product-card img {
+    
+    width: 300px;
+    height: 300px;
+    object-fit: cover; 
+    border-radius: 20px;
+    transition: opacity o.3s ease;
+}
+
+.hover-details {
+
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(2, 2, 2, 0.8); 
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+
+.product-card:hover img{
+    
+    opacity: 0.5;
+} 
+
+.product-card:hover {
+    
+    transform: scale(1.05);
+}
+
+.product-card:hover .hover-details {
+
+    opacity: 1;
+    color: white;
+}
+
+.product-name {
+
+    font-size: 1.5rem;
+    margin-top: 10px;
+    color: #030303;
+}
+
+h2{
+
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 3.5rem !important;
+    text-rendering: optimizeLegibility;
+    vertical-align: baseline;
+    -webkit-font-smoothing: anatialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: rgb(12, 12, 12);
+    letter-spacing: 10px;
+    top: 20px;
+    
+}
+
+
+
+.texto-adentro h1{ 
+
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 3.5rem !important;
+    color: #f0f0f0;
+}
+
+h1{
+
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 3.5rem !important;
+    color: #868686;  
+}
+
+
+
+.row {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col-lg-6 {
+    
+    flex: 1 1 48%;
+    margin-bottom: 20px;
+}

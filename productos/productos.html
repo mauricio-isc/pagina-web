@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ICONO PARA QUE APAREZCA EN PANTALLA-->
+    <link rel="icon" type="image/x-icon" href="../imagen/logo.png">
+    <!-- ESTILOS CSS -->
+    <link rel="stylesheet" href="../css/estilo_productos.css">
+    <link rel="stylesheet" href="../css/estilo_index.css">
+    <!-- FRAMEWORK BOOTSTRAP -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Librería Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- API de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <title>VULKAN - ESTUFAS DE GAS</title>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light-blue custom-navbar fixed-top">
+        <!--LOGOTIPO-->
+        <a class="navbar-brand" href="../index.html"><img src="../imagen/logo.png" alt="Logo"></a>
+        <!--BOTON PARA QUE CUANDO SE HAGA PEQUEÑA LA PANTALLA SEA RESPONSIVO -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- PARTE DEL MENU -->
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"> 
+                    <a class="nav-link" href="../index.html"><i class="fas fa-home"></i> Inicio</a> 
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="productos.html"><i class="fas fa-bag-shopping"></i> Ver productos</a>
+                </li>
+                <li class="nav-item"> 
+                    <a class="nav-link" href="../contacto.html"><i class="fas fa-user"></i> Contacto</a> 
+                </li>
+                <li class="nav-item"> 
+                    <a class="nav-link" href="../vulkan.html"><i class="fas fa-industry"></i> VULKAN</a> 
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- CONTENIDO DE PRODUCTOS -->
+    <div class="container mt-5">
+        <h1 class="text-center mb-2">Estufas</h1>
+        <h2 class="text-center mb-5">VULKAN</h2>
+
+        <!-- Slider para filtrar por precio -->
+        <div class="text-center mb-4">
+            <label for="priceRange">Filtrar por precio: </label>
+            <input type="range" id="priceRange" min="0" max="10000" step="500" value="10000" oninput="updateSliderValue(this.value)">
+            <span id="sliderValue">$10,000</span>
+        </div>
+
+        <div class="row">
+            <!-- estufa1 -->
+            <div class="col-lg-6 col-md-6 mb-4">
+                <a href="detalles_compra/vulkan_ecoflama.html" class="product-link">
+                    <div class="product-card" data-price="10000">
+                        <img src="producto_imagen/producto5.png" alt="Producto 4">
+                        <h3 class="product-name">VULKAN EcoFlama</h3>
+                        <p class="product-price">$10,000</p>
+                        <span class="hover-details product-link">Ver detalles</span>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="col-lg-6 col-md-6 mb-4">
+                <a href="detalles_compra/vulkan_ignis.html" class="product-link">
+                    <div class="product-card" data-price="9000">
+                        <img src="producto_imagen/producto1.png" alt="Producto 1">
+                        <h3 class="product-name">VULKAN Ignis</h3>
+                        <p class="product-price">$9,000</p>
+                        <span class="hover-details product-link">Ver detalles</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- estufa 3 -->
+            <div class="col-lg-6 col-md-6 mb-4">
+                <a href="detalles_compra/vulkan_inferno.html" class="product-link">
+                    <div class="product-card" data-price="7499">
+                        <img src="producto_imagen/producto3.png" alt="Producto 3">
+                        <h3 class="product-name">VULKAN Inferno</h3>
+                        <p class="product-price">$7,499</p>
+                        <span class="hover-details product-link">Ver detalles</span>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="col-lg-6 col-md-6 mb-4">
+                <a href="detalles_compra/vulkan_ProCoo.html" class="product-link">
+                    <div class="product-card" data-price="7000">
+                        <img src="producto_imagen/producto8.2.png" alt="Producto 4">
+                        <h3 class="product-name">VULKAN ProCook</h3>
+                        <p class="product-price">$7,000</p>
+                        <span class="hover-details product-link">Ver detalles</span>
+                    </div>
+                </a>
+            </div>
+
+            <!--ESTUFA 6-->
+            <div class="col-lg-6 col-md-6 mb-4">
+                <a href="detalles_compra/vulkan_chef.html" class="product-link">
+                    <div class="product-card" data-price="6000">
+                        <img src="producto_imagen/producto8.3.png" alt="Producto 4">
+                        <h3 class="product-name">VULKAN Chef</h3>
+                        <p class="product-price">$6,000</p>
+                        <span class="hover-details product-link">Ver detalles</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- estufa 5 -->
+            <div class="col-lg-6 col-md-6 mb-4">
+            <a href="detalles_compra/vulkan_elite.html" class="product-link">
+                <div class="product-card" data-price="4800">
+                    <img src="producto_imagen/producto6.png" alt="Producto 4">
+                    <h3 class="product-name">VULKAN elite</h3>
+                    <p class="product-price">$4,800</p>
+                    <span class="hover-details product-link">Ver detalles</span>
+                </div>
+            </a>
+            </div>
+            <!-- estufa 4 -->
+            <div class="col-lg-6 col-md-6 mb-4">
+                <a href="detalles_compra/vulkan_pyro.html" class="product-link">
+                    <div class="product-card" data-price="1500">
+                        <img src="producto_imagen/producto4.png" alt="Producto 4">
+                        <h3 class="product-name">VULKAN Pyro</h3>
+                        <p class="product-price">$1,500</p>
+                        <span class="hover-details product-link">Ver detalles</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- estufa2 -->
+            <div class="col-lg-6 col-md-6 mb-4">
+                <a href="detalles_compra/vulkan_magma.html" class="product-link">
+                    <div class="product-card" data-price="999">
+                        <img src="producto_imagen/producto2.png" alt="Producto 2">
+                        <h3 class="product-name">VULKAN Magma</h3>
+                        <p class="product-price">$999</p>
+                        <span class="hover-details product-link">Ver detalles</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- CONTENEDOR CON IMAGEN Y TEXTO -->
+    <div class="contenedor">
+        <img src="../imagen/fondo3.png" alt="fondo">
+        <div class="texto-adentro">
+            <h1>Estufas VULKAN</h1>
+            <p>Nuestros clientes valoran tener un producto de primer nivel y se sienten satisfechos al saber que tomaron una decisión de compra acertada y bien considerada.</p>
+        </div>
+    </div>
+        <!-- Parte acerca de-->
+        <footer class="bg-light text-center text-lg-start">
+            <div class="container p-4">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Sobre Nosotros</h5>
+                        <p class="text-justify">
+                            VULKAN es una empresa mexicana fundada en el Estado de México, Huixquilucan de Degollado. Desde 1972 el principal intéres de su fundador es fusionar el diseño y la eficiencia de las estufas mexicanas con las necesidades de cada estado de la república en el que tiene presencia.
+                        </p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <!-- CAMBIE EL LOGO EN VEZ DE EL INICIO PARA MAS PRESENTABILIDAD-->
+                        <img src="../imagen/logo_fondo.png" alt="logo" class="logo-image">
+                     <!--   <h5 class="text-uppercase">Enlaces</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li><a href="index.html" class="text-dark">Inicio</a></li>
+                            <li><a href="productos/productos.html" class="text-dark">Ver productos</a></li>
+                            <li><a href="#!" class="text-dark">Contacto</a></li>
+                        </ul>-->
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Síguenos</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li><a href="#!" class="text-dark"><i class="fab fa-facebook"></i> Facebook</a></li>
+                            <li><a href="#!" class="text-dark"><i class="fab fa-twitter"></i> Twitter</a></li>
+                            <li><a href="#!" class="text-dark"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center p-3 bg-dark text-light">
+                © 2024 Estufas VULKAN. Todos los derechos reservados.
+            </div>
+        </footer>
+    <script src="../script/slider_precio.js"></script>
+    <!-- Bootstrap js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
