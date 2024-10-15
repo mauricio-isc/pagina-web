@@ -1,1 +1,1 @@
-Esto es un proyecto escolar para fines educativos 
+Esto es un proyecto personal 
